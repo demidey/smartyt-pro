@@ -1,0 +1,47 @@
+{
+    "manifest_version": 3,
+    "name": "SmartYT Pro",
+    "version": "3.1",
+    "description": "AI Camera-based YouTube resolution manager using face detection.",
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.youtube.com/*"
+            ],
+            "js": [
+                "face-api.min.js",
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        },
+        {
+            "matches": [
+                "*://www.youtube.com/*"
+            ],
+            "js": [
+                "player.js"
+            ],
+            "run_at": "document_idle",
+            "world": "MAIN"
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "models/*"
+            ],
+            "matches": [
+                "*://www.youtube.com/*"
+            ]
+        }
+    ],
+    "host_permissions": [
+        "*://www.youtube.com/*"
+    ]
+}

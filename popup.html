@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <title>SmartYT Pro</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span class="red-dot"></span>
+                <h1>SmartYT Pro</h1>
+            </div>
+            <p class="subtitle">AI Face Tracking</p>
+        </header>
+
+        <main>
+            <div class="setting-group">
+                <label>Camera Detection</label>
+                <div class="toggle-wrapper">
+                    <span>Enable AI Tracking</span>
+                    <label class="switch">
+                        <input type="checkbox" id="camera-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="setting-group">
+                <label>Sensitivity: <span id="sens-label">5</span> / 10</label>
+                <div class="slider-wrapper">
+                    <span class="range-label">Low</span>
+                    <input type="range" id="sensitivity" min="1" max="10" value="5" step="1">
+                    <span class="range-label">High</span>
+                </div>
+                <p class="hint">Higher = triggers on slightest head move</p>
+            </div>
+
+            <div class="setting-group">
+                <label for="res-high">👁 Looking at Screen</label>
+                <div class="select-wrapper">
+                    <select id="res-high">
+                        <option value="hd2160">2160p (4K)</option>
+                        <option value="hd1440">1440p (2K)</option>
+                        <option value="hd1080" selected>1080p (Full HD)</option>
+                        <option value="hd720">720p (HD)</option>
+                        <option value="large">480p</option>
+                        <option value="medium">360p</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="setting-group">
+                <label for="res-low">💤 Looking Away</label>
+                <div class="select-wrapper">
+                    <select id="res-low">
+                        <option value="hd1080">1080p (Full HD)</option>
+                        <option value="hd720">720p (HD)</option>
+                        <option value="large">480p</option>
+                        <option value="medium" selected>360p</option>
+                        <option value="small">240p</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="status-card">
+                <div class="status-item">
+                    <span class="label">Engine:</span>
+                    <span class="value">face-api.js AI</span>
+                </div>
+                <div class="status-item">
+                    <span class="label">Zone:</span>
+                    <span id="zone-info" class="value dim">—</span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>v3.1 · No Chrome Flags Required</p>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
